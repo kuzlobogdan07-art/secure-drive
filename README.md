@@ -35,7 +35,7 @@ Frontend:
 - локальні self-signed сертифікати.
 
 
-## Запуск , якщо запуск робити повторно то пропускається 1 та 2 розділи
+## Запуск , якщо запуск робити повторно то пропускається 1 та 2,3 розділи
 
 ### 1. Встановити залежності frontend
 
@@ -58,7 +58,16 @@ cd D:\Python\secure-drive\infra\certs
 
 Ці файли потрібні тільки для локального HTTPS. Приватний ключ сертифіката не треба додавати в git.
 
-### 3. Запустити backend
+### 3. Встановити залежності backend
+
+```powershell
+cd D:\Python\secure-drive\backend
+D:\Python\secure-drive\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+Якщо залежності backend вже встановлені, цей крок можна пропустити.
+
+### 4. Запустити backend
 
 ```powershell
 cd D:\Python\secure-drive\backend
@@ -77,7 +86,7 @@ https://127.0.0.1:8000/health
 {"status":"ok"}
 ```
 
-### 4. Запустити frontend
+### 5. Запустити frontend
 
 ```powershell
 cd D:\Python\secure-drive\frontend
