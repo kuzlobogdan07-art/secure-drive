@@ -1,0 +1,15 @@
+.env
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+*.log
+secure_drive.db
+storage/
+mail/
+security_logs/
+node_modules/
+dist/
+infra/certs/*.pem
+*.private-key.json
+.DS_Store
